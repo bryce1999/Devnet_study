@@ -1,5 +1,4 @@
 # Native imports
-import os
 import sys
 
 # Third party imports
@@ -26,3 +25,6 @@ def request_joke() -> str:
     return json_data['value']
 
 
+if __name__ == '__main__':
+    print(f'{request_joke()}')
+    sys.exit()
